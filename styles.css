@@ -59,6 +59,7 @@ body {
 }
 
 .largeText {
+  font-size: 32px;
   font-weight: 900;
   color: var(--darkBlue);
 }
