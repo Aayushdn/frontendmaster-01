@@ -1,0 +1,149 @@
+@import url("https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  /* Primary Colors*/
+  --paleBlue: hsl(225, 100%, 94%);
+  --brightBlue: hsl(245, 75%, 52%);
+
+  /* Neutral Color */
+  --veryPaleBlue: hsl(225, 100%, 98%);
+  --desaturatedBlue: hsl(224, 223%, 55%);
+  --darkBlue: hsl(223, 47%, 23%);
+}
+
+body {
+  background: var(--paleBlue) url("./images/pattern-background-desktop.svg")
+    no-repeat;
+  background-size: cover;
+  font-family: "Red Hat Display", sans-serif;
+  font-family: 16px;
+}
+
+.container {
+  width: 35vw;
+  /* min-width: 320px; */
+  /* border: 1px solid black; */
+  margin: 60px auto;
+  border-radius: 20px;
+}
+
+.top img {
+  width: 100%;
+  border-radius: 20px 20px 0 0;
+  vertical-align: bottom;
+}
+
+.bottom {
+  background-color: white;
+  padding: 40px;
+  border-radius: 0 0 20px 20px;
+}
+
+.btmTop {
+  display: flex;
+  flex-direction: column;
+  padding: 0 5px;
+}
+.btmTop * {
+  text-align: center;
+}
+
+.btmTop p {
+  margin: 20px 0 0 0;
+}
+
+.largeText {
+  font-weight: 900;
+  color: var(--darkBlue);
+}
+
+.subTitle {
+  font-weight: 500;
+  color: gray;
+}
+
+.btmMiddle {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  background-color: var(--veryPaleBlue);
+  margin: 20px auto;
+  height: 100px;
+  border: 2px solid var(--veryPaleBlue);
+  border-radius: 10px;
+  padding: 0 20px;
+}
+.btmMiddle div {
+  display: flex;
+  flex-basis: 45%;
+  flex: 1;
+  justify-content: left;
+}
+.btmMiddle p {
+  font-weight: 700;
+  color: var(--darkBlue);
+}
+
+.btmMiddle div img {
+  align-self: center;
+  padding-right: 10px;
+}
+
+.btmMiddle a {
+  color: var(--brightBlue);
+}
+
+.btmMiddle a:hover {
+  color: hsl(245, 75%, 62%);
+}
+.btn {
+  background-color: var(--brightBlue);
+  width: 100%;
+  font-size: 14px;
+  font-family: "Red Hat Display", sans-serif;
+  font-weight: 700;
+  color: var(--veryPaleBlue);
+  border: none;
+  /* border: 2px solid var(--veryPaleBlue); */
+  /* box-shadow: 10px 6px 39px 3px var(--brightBlue); */
+  box-shadow: 2px 2px 16px 2px hsla(244.9, 74.7%, 52%, 0.43);
+  border-radius: 10px;
+  cursor: pointer;
+  height: 50px;
+}
+
+.btn:hover {
+  background-color: hsl(245, 75%, 62%);
+}
+
+.btmBottom p {
+  text-align: center;
+  margin: 30px 0 15px 0;
+  font-weight: 900;
+  color: rgb(126, 125, 125);
+  font-size: 14px;
+}
+
+.btmBottom p:hover {
+  color: var(--darkBlue);
+  cursor: pointer;
+}
+
+/* ---- Medial Querys -----*/
+
+@media screen and (max-width: 450px) {
+  .container {
+    width: 90vw;
+  }
+
+  .bottom {
+    padding: 20px;
+  }
+}
