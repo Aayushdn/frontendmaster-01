@@ -26,8 +26,8 @@ body {
 }
 
 .container {
-  width: 35vw;
-  /* min-width: 320px; */
+  width: clamp(445px, 30vw, 320px);
+  /* min-width: 500px; */
   /* border: 1px solid black; */
   margin: 60px auto;
   border-radius: 20px;
@@ -145,6 +145,7 @@ body {
   }
   .container {
     width: 90vw;
+    max-width: 445px;
   }
 
   .bottom {
